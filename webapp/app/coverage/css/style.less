@@ -1,0 +1,65 @@
+/* style.less */
+
+@background: #222;
+@foreground: #999;
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px; 
+  margin: 0;
+  background: @background;
+  color: @foreground;
+}
+
+#coverage {
+  margin: 10px 15px;
+
+  .row > * {
+    height: 1em;
+    display: inline-block;
+  }
+
+  .row > .calendar {
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: bottom;
+  }
+}
+
+#survey {
+  margin: 10px 15px;
+
+  table {
+    border: 2px solid @foreground;
+    border-collapse: collapse;
+    font-family: monospace;
+
+    th, td {
+      padding: 4px 8px;
+    }
+
+    th {
+      border-bottom: 1px solid @foreground;
+      text-align: center;
+    }
+
+    tfoot {
+      td {
+        border-top: 1px solid @foreground;
+      }
+    }
+
+    td {
+      text-align: right;
+    }
+
+    .good {
+      color: green;
+    }
+
+    .bad {
+      color: red;
+    }
+  }
+}

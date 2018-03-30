@@ -1,0 +1,10 @@
+.*.sw?
+.AppleDouble/
+.DS_Store
+/MYMETA.json
+/MYMETA.yml
+/Makefile
+/Session.vim
+/blib/
+/node_modules/
+/pm_to_blib
