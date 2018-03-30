@@ -1,89 +1,89 @@
 {
-   "author": "Andy Armstrong <andy@hexten.net>",
-   "bugs": {
-      "url": "https://github.com/AndyA/BBCNewsScripts/issues"
+   "author" : "Andy Armstrong <andy@hexten.net>",
+   "bugs" : {
+      "url" : "https://github.com/AndyA/Delirium/issues"
    },
-   "dependencies": {},
-   "description": "BBC News Scripts",
-   "devDependencies": {
-      "babel-preset-env": "^1.6.1",
-      "babel-preset-es2015": "^6.24.1",
-      "babel-preset-react": "^6.16.0",
-      "babelify": "^7.3.0",
-      "bootstrap": "^3.3.7",
-      "browserify": "^13.1.1",
-      "color": "^3.0.0",
-      "exorcist": "^0.4.0",
-      "gulp": "^3.9.1",
-      "gulp-less": "^3.3.0",
-      "gulp-notify": "^2.2.0",
-      "gulp-sourcemaps": "^2.2.0",
-      "gulp-uglify": "^2.0.0",
-      "gulp-util": "^3.0.8",
-      "jquery": "^3.1.1",
-      "jquery-ui-browserify": "^1.11.0-pre-seelio",
-      "pretty-hrtime": "^1.0.3",
-      "promise-polyfill": "^6.0.2",
-      "q": "^1.5.0",
-      "react": "^15.3.2",
-      "react-bootstrap": "^0.30.6",
-      "react-dom": "^15.3.2",
-      "react-router": "^3.0.0",
-      "react-router-bootstrap": "^0.23.1",
-      "spin": "0.0.1",
-      "through2": "^2.0.1",
-      "uglifyify": "^4.0.3",
-      "underscore.string": "^3.3.4",
-      "vinyl-source-stream": "^1.1.0",
-      "vinyl-transform": "^1.0.0",
-      "watchify": "^3.9.0",
-      "whatwg-fetch": "^2.0.0"
+   "dependencies" : {},
+   "description" : "Delirium RSS Server",
+   "devDependencies" : {
+      "babel-preset-env" : "^1.6.1",
+      "babel-preset-es2015" : "^6.24.1",
+      "babel-preset-react" : "^6.16.0",
+      "babelify" : "^7.3.0",
+      "bootstrap" : "^3.3.7",
+      "browserify" : "^13.1.1",
+      "color" : "^3.0.0",
+      "exorcist" : "^0.4.0",
+      "gulp" : "^3.9.1",
+      "gulp-less" : "^3.3.0",
+      "gulp-notify" : "^2.2.0",
+      "gulp-sourcemaps" : "^2.2.0",
+      "gulp-uglify" : "^2.0.0",
+      "gulp-util" : "^3.0.8",
+      "jquery" : "^3.1.1",
+      "jquery-ui-browserify" : "^1.11.0-pre-seelio",
+      "pretty-hrtime" : "^1.0.3",
+      "promise-polyfill" : "^6.0.2",
+      "q" : "^1.5.0",
+      "react" : "^15.3.2",
+      "react-bootstrap" : "^0.30.6",
+      "react-dom" : "^15.3.2",
+      "react-router" : "^3.0.0",
+      "react-router-bootstrap" : "^0.23.1",
+      "spin" : "0.0.1",
+      "through2" : "^2.0.1",
+      "uglifyify" : "^4.0.3",
+      "underscore.string" : "^3.3.4",
+      "vinyl-source-stream" : "^1.1.0",
+      "vinyl-transform" : "^1.0.0",
+      "watchify" : "^3.9.0",
+      "whatwg-fetch" : "^2.0.0"
    },
-   "esformatter": {
-      "esformatter": {
-         "allowShebang": true
+   "esformatter" : {
+      "esformatter" : {
+         "allowShebang" : true
       },
-      "indent": {
-         "alignComments": true,
-         "value": "  "
+      "indent" : {
+         "alignComments" : true,
+         "value" : "  "
       },
-      "jsx": {
-         "JSXExpressionsSingleLine": true,
-         "alignWithFirstAttribute": false,
-         "attrsOnSameLineAsTag": false,
-         "closingTagOnNewLine": false,
-         "firstAttributeOnSameLine": true,
-         "formatJSX": true,
-         "formatJSXExpressions": true,
-         "htmlOptions": {
-            "brace_style": "collapse",
-            "indent_char": " ",
-            "indent_size": 2,
-            "max_preserve_newlines": 2,
-            "preserve_newlines": true
+      "jsx" : {
+         "JSXExpressionsSingleLine" : true,
+         "alignWithFirstAttribute" : false,
+         "attrsOnSameLineAsTag" : false,
+         "closingTagOnNewLine" : false,
+         "firstAttributeOnSameLine" : true,
+         "formatJSX" : true,
+         "formatJSXExpressions" : true,
+         "htmlOptions" : {
+            "brace_style" : "collapse",
+            "indent_char" : " ",
+            "indent_size" : 2,
+            "max_preserve_newlines" : 2,
+            "preserve_newlines" : true
          },
-         "maxAttrsOnTag": 3,
-         "removeSpaceBeforeClosingJSX": false,
-         "spaceInJSXExpressionContainers": " "
+         "maxAttrsOnTag" : 3,
+         "removeSpaceBeforeClosingJSX" : false,
+         "spaceInJSXExpressionContainers" : " "
       },
-      "lineBreak": {
-         "value": "\n"
+      "lineBreak" : {
+         "value" : "\n"
       },
-      "plugins": [
+      "plugins" : [
          "esformatter-jsx"
       ],
-      "root": true,
-      "whiteSpace": {
-         "removeTrailing": 1,
-         "value": " "
+      "root" : true,
+      "whiteSpace" : {
+         "removeTrailing" : 1,
+         "value" : " "
       }
    },
-   "homepage": "https://github.com/AndyA/BBCNewsScripts#readme",
-   "license": "ISC",
-   "name": "BBCNewsScripts",
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/AndyA/BBCNewsScripts.git"
+   "homepage" : "https://github.com/AndyA/Delirium/",
+   "license" : "ISC",
+   "name" : "Delirium",
+   "repository" : {
+      "type" : "git",
+      "url" : "git@github.com:AndyA/Delirium.git"
    },
-   "version": "1.0.0"
+   "version" : "1.0.0"
 }
