@@ -23,7 +23,7 @@ post '/fever/' => sub {
   debug "post query: ", join ", ", $qp->keys;
   debug "post args: ",  join ", ", $parms->keys;
 
-  my $resp = { api_version => 1, auth => 1 };
+  my $resp = { api_version => 2, auth => 1 };
 
   if ( exists $qp->{groups} ) {
     $resp->{groups} = [
@@ -76,8 +76,18 @@ post '/fever/' => sub {
   }
 
   if ( exists $qp->{items} ) {
-    $resp->{items}       = [];
-    $resp->{total_items} = 0;
+    $resp->{items} = [
+      { id              => 1,
+        feed_id         => 1,
+        title           => "Something about technology",
+        author          => 'andy@hexten,net',
+        html            => "<h1>Technology</h1><p>It's great...</p>",
+        url             => "https://www.theregister.co.uk/tech",
+        is_saved        => 0,
+        is_read         => 0,
+        created_on_time => time() }
+    ];
+    $resp->{total_items} = 1;
   }
 
   if ( exists $qp->{links} ) {
@@ -85,7 +95,7 @@ post '/fever/' => sub {
   }
 
   if ( exists $qp->{unread_item_ids} ) {
-    $resp->{unread_item_ids} = "";
+    $resp->{unread_item_ids} = "1";
   }
 
   if ( exists $qp->{saved_item_ids} ) {
